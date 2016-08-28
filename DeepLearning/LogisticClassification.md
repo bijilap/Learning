@@ -1,4 +1,7 @@
 ## Softmax
+
+Given a set of values, the softmax function can be used to convert those values in to probability values
+
 S(y<sub>i</sub>)= e<sup>y<sub>i</sub></sup> / ∑<sub>j</sub> e<sup>y<sub>j</sub></sup>
 
 ## One Hot Encoding
@@ -27,3 +30,15 @@ D(S,L) = - ∑<sub>i</sub>L<sub>i</sub> log(S<sub>i</sub>)
     
        Linear Model
 Input -----------------> Logit  ----------> Softmax --------> Cross Entropy
+
+```
+D ( S(WX + b), L)
+```
+
+## Minimizing Cross Entropy
+Low distance for correct class, high distance for wrong class
+
+Loss Function
+```
+L =  1/N ∑<sub>i</sub> D( S(WX<sub>i</sub> + b), L<sub>i</sub>)
+```

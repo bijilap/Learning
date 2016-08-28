@@ -31,6 +31,8 @@ Input -----------------> Logit  ----------> Softmax --------> Cross Entropy
 
 D ( S(WX + b), L)
 
+W: weights
+b: biases
 
 ## Minimizing Cross Entropy
 Low distance for correct class, high distance for wrong class

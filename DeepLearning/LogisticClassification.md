@@ -22,23 +22,20 @@ This representation becomes inefficient when you a millions of classes, consider
 
 Cross entropy can be used to compare output of the classifier with that of the expected hot-encoded vector corresponding to the lables.
 
-```
 D(S,L) = - ∑<sub>i</sub>L<sub>i</sub> log(S<sub>i</sub>)
-```
 
 ## Multinomial Logisitic Classification
     
        Linear Model
 Input -----------------> Logit  ----------> Softmax --------> Cross Entropy
 
-```
 D ( S(WX + b), L)
-```
+
 
 ## Minimizing Cross Entropy
 Low distance for correct class, high distance for wrong class
 
 Loss Function
-```
+
 L =  1/N ∑<sub>i</sub> D( S(WX<sub>i</sub> + b), L<sub>i</sub>)
-```
+
